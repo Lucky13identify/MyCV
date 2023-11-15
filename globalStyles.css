@@ -1,0 +1,63 @@
+/* Reset styles */
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  color: white;
+  margin: 0;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.6),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url(https://res.cloudinary.com/dici0468p/image/upload/v1698775443/noutbuk_didzhej_oborudovanie_212416_1920x1200_dme1gb.jpg);
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Global styles for classes */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
