@@ -26,10 +26,6 @@
 import HeaderComponent from "./components/Header/HeaderComponent.vue";
 import ModalMenu from "./components/ModalMenu/ModalMenu";
 import ModalContact from "./components/ModalContacts/ModalContact";
-// import AboutMePage from "./pages/AboutMe/AboutMePage.vue";
-// import SkillsPage from "./pages/Skills/SkillsPage.vue";
-// import MainPage from "./pages/MainPage/MainPage.vue";
-// import ProjectsPage from "./pages/Projects/ProjectsPage.vue";
 import ModalWindow from "./components/Modal/ModalWindow";
 
 export default {
