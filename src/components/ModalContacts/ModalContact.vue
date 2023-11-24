@@ -39,7 +39,8 @@ export default {
       return {
         "--background-color": this.$store.state.isThemeDark
           ? "rgba(40, 40, 40, 1)"
-          : "#f5f5f5",
+          : "#c2893c",
+        "--icon": this.$store.state.isThemeDark ? "white" : "black",
       };
     },
   },
@@ -67,7 +68,7 @@ export default {
   width: 50%;
   height: 100%;
   border-radius: 15px;
-  background: #c2893c;
+  background: var(--background-color);
   padding: 20px;
 
   overflow-y: auto;

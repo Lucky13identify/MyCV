@@ -86,7 +86,7 @@ export default {
   justify-content: flex-end;
 
   @media screen and (min-width: 768px) {
-    width: 120px;
+    width: 160px;
     gap: 20px;
   }
   @media screen and (min-width: 1200px) {
@@ -107,7 +107,12 @@ export default {
 
 .flag-container {
   display: flex;
-  gap: 1px;
+  gap: 20px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 10px;
+  }
 }
 
 .light {

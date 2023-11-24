@@ -41,6 +41,7 @@ export default {
         "--background-color": this.$store.state.isThemeDark
           ? "rgba(40, 40, 40, 1)"
           : "#c2893c",
+        "--icon": this.$store.state.isThemeDark ? "white" : "black",
       };
     },
   },

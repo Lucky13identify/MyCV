@@ -10,7 +10,7 @@
 <script>
 import ContainerOfProjects from "../../components/Projects/ContainerOfProjects";
 import PulseLoader from "vue-spinner/src/PulseLoader.vue";
-
+// dsds
 export default {
   name: "ProjectsPage",
   components: { ContainerOfProjects, PulseLoader },

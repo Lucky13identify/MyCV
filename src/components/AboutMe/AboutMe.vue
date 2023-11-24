@@ -23,10 +23,17 @@ export default {
   line-height: 1.4;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .text {
   margin: 0;
+  text-align: left;
+  @media screen and (min-width: 768px) {
+    text-align: justify;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .flex-container {
