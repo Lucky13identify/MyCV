@@ -47,6 +47,9 @@ export default {
       this.isThemeDark = !this.isThemeDark;
       this.$store.commit("changeTheme", this.isThemeDark);
       localStorage.setItem("isThemeDark", JSON.stringify(this.isThemeDark));
+
+      document.body.classList.toggle("light", !this.isThemeDark);
+      document.body.classList.toggle("dark", this.isThemeDark);
     },
 
     changeLanguage(lang) {
