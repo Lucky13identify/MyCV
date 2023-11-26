@@ -66,6 +66,7 @@ export default {
   }
 }
 .hero {
+  height: 100vh;
   padding-top: 80px;
   padding-bottom: 30px;
 

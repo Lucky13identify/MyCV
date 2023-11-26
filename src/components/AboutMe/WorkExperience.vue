@@ -112,7 +112,6 @@ export default {
 
 .text-description {
   width: 100%;
-  text-align: justify;
 }
 .flex-element {
   font-size: 16px;
