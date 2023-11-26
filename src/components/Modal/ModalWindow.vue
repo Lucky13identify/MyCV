@@ -309,6 +309,7 @@ export default {
 }
 .link-container {
   display: flex;
+  flex-wrap: wrap;
   /* justify-content: flex-end; */
 
   justify-content: center;
