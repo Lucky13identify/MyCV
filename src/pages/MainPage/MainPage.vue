@@ -1,7 +1,5 @@
 <template>
-  <div class="container-style" :style="themeStyles">
-    <MainComponent />
-  </div>
+  <MainComponent />
 </template>
 
 <script>
@@ -13,21 +11,21 @@ export default {
     MainComponent,
   },
   computed: {
-    themeStyles() {
-      return {
-        backgroundColor: this.$store.state.isThemeDark
-          ? "rgba(40, 40, 40, 0.8)"
-          : "rgba(255, 255, 255)",
-        backdropFilter: "blur(10px)",
-        color: this.$store.state.isThemeDark ? "white" : "black",
-      };
-    },
+    // themeStyles() {
+    //   return {
+    //     backgroundColor: this.$store.state.isThemeDark
+    //       ? "rgba(40, 40, 40, 0.8)"
+    //       : "rgba(255, 255, 255)",
+    //     backdropFilter: "blur(10px)",
+    //     color: this.$store.state.isThemeDark ? "white" : "black",
+    //   };
+    // },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.container-style {
+/* .container-style {
   background-color: rgba(80, 80, 80, 0.4);
   backdrop-filter: blur(10px);
   height: 100vh;
@@ -36,5 +34,5 @@ export default {
   }
   @media screen and (min-width: 1200px) {
   }
-}
+} */
 </style>

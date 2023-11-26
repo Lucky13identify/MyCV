@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section class="hero" :style="themeStyles">
     <div class="container hero-container animate__animated">
       <div class="img-container">
         <img
@@ -28,7 +28,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    themeStyles() {
+      return {
+        backgroundColor: this.$store.state.isThemeDark
+          ? "rgba(40, 40, 40, 0.8)"
+          : "rgba(255, 255, 255)",
+        backdropFilter: "blur(10px)",
+        color: this.$store.state.isThemeDark ? "white" : "black",
+      };
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -56,6 +68,8 @@ export default {};
 .hero {
   padding-top: 80px;
   padding-bottom: 30px;
+
+  /* background-color: var(--backgroundColor); */
 }
 
 .photo {
