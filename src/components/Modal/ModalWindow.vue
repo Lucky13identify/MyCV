@@ -164,13 +164,18 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 270px;
   height: 90%;
   border-radius: 15px;
   background: var(--background-color);
   padding: 20px;
   color: var(--color);
   overflow-y: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 400px;
+    height: 90%;
+  }
 
   @media screen and (min-width: 768px) {
     width: 600px;

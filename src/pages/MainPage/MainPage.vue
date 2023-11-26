@@ -30,13 +30,11 @@ export default {
 .container-style {
   background-color: rgba(80, 80, 80, 0.4);
   backdrop-filter: blur(10px);
-
-  height: 2000px;
+  height: 100vh;
 
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
-    height: 100vh;
   }
 }
 </style>
