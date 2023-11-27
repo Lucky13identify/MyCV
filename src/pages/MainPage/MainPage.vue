@@ -10,29 +10,7 @@ export default {
   components: {
     MainComponent,
   },
-  computed: {
-    // themeStyles() {
-    //   return {
-    //     backgroundColor: this.$store.state.isThemeDark
-    //       ? "rgba(40, 40, 40, 0.8)"
-    //       : "rgba(255, 255, 255)",
-    //     backdropFilter: "blur(10px)",
-    //     color: this.$store.state.isThemeDark ? "white" : "black",
-    //   };
-    // },
-  },
 };
 </script>
 
-<style lang="scss" scoped>
-/* .container-style {
-  background-color: rgba(80, 80, 80, 0.4);
-  backdrop-filter: blur(10px);
-  height: 100vh;
-
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
-} */
-</style>
+<style lang="scss" scoped></style>

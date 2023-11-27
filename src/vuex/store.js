@@ -43,11 +43,8 @@ const store = createStore({
   },
   actions: {
     fetchDataFromServer({ commit }) {
-      // Ваш запрос на сервер может выглядеть так
-      // Здесь предполагается использование библиотеки Axios для выполнения запроса
       getAllProjects()
         .then((response) => {
-          // После успешного ответа от сервера вызываем мутацию для обновления данных
           commit("setServerData", response);
         })
         .catch((error) => {

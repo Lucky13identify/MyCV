@@ -1,9 +1,6 @@
 <template>
   <HeaderComponent />
   <RouterView />
-  <!-- <AboutMePage /> -->
-  <!-- <MainPage /> -->
-  <!-- <SkillsPage /> -->
   <teleport to="#modal">
     <transition name="fade">
       <ModalWindow v-if="$store.state.isModalOpen"
@@ -19,7 +16,6 @@
       <ModalContact v-if="$store.state.isModalPhoneContactsOpen"
     /></transition>
   </teleport>
-  <!-- <ProjectsPage /> -->
 </template>
 
 <script>
@@ -32,10 +28,6 @@ export default {
   name: "App",
   components: {
     HeaderComponent,
-    // ProjectsPage,
-    // AboutMePage,
-    // SkillsPage,
-    // MainPage,
     ModalWindow,
     ModalMenu,
     ModalContact,

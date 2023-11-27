@@ -211,7 +211,6 @@ export default {
 
 .image {
   border-radius: 20px;
-  /* width: 600px; */
 }
 
 .close {
@@ -310,7 +309,6 @@ export default {
 .link-container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: flex-end; */
 
   justify-content: center;
   gap: 20px;

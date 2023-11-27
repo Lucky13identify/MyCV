@@ -47,19 +47,15 @@ export default {
       this.isThemeDark = !this.isThemeDark;
       this.$store.commit("changeTheme", this.isThemeDark);
       localStorage.setItem("isThemeDark", JSON.stringify(this.isThemeDark));
-
-      // document.body.classList.toggle("light", !this.isThemeDark);
-      // document.body.classList.toggle("dark", this.isThemeDark);
     },
 
     changeLanguage(lang) {
       this.$i18n.locale = lang;
-      // запись текущего языка в локальное хранилище
+
       localStorage.setItem("currentLanguage", lang);
     },
 
     created() {
-      // установка текущего языка из локального хранилища при создании компонента
       const storedLanguage = localStorage.getItem("currentLanguage");
       if (storedLanguage) {
         this.$i18n.locale = storedLanguage;
@@ -94,7 +90,6 @@ export default {
   }
   @media screen and (min-width: 1200px) {
   }
-  /* margin-left: 200px; */
 }
 
 .flag {

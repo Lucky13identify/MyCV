@@ -10,7 +10,7 @@
 <script>
 import ContainerOfProjects from "../../components/Projects/ContainerOfProjects";
 import PulseLoader from "vue-spinner/src/PulseLoader.vue";
-// dsds
+
 export default {
   name: "ProjectsPage",
   components: { ContainerOfProjects, PulseLoader },
@@ -40,7 +40,6 @@ export default {
   height: 100%;
   animation-name: fadeIn;
   animation-duration: 1.5s;
-  /* backdrop-filter: blur(10px); */
 }
 
 .flex-container {

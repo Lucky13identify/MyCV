@@ -56,7 +56,6 @@ export default {
     animation-duration: 1.5s;
   }
   @media screen and (min-width: 1200px) {
-    /* gap: 20px; */
     gap: 0;
     display: flex;
     flex-direction: row;
@@ -72,8 +71,6 @@ export default {
   @media screen and (min-width: 768px) {
     height: 100vh;
   }
-
-  /* background-color: var(--backgroundColor); */
 }
 
 .photo {
@@ -115,7 +112,6 @@ export default {
     letter-spacing: 0px;
     margin: 0px;
   }
-  /* animation-delay: 1s; */
 }
 
 .hero-info {
@@ -144,8 +140,6 @@ export default {
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
-    /* margin-right: 60px; */
-    /* justify-content: center; */
     width: 50%;
   }
 }
@@ -157,7 +151,6 @@ export default {
   line-height: 30px;
   letter-spacing: 0px;
   margin: 0px;
-  /* animation-delay: 2s; */
 }
 
 .hero-link {
