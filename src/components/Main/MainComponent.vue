@@ -66,9 +66,12 @@ export default {
   }
 }
 .hero {
-  height: 100vh;
   padding-top: 80px;
   padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+  }
 
   /* background-color: var(--backgroundColor); */
 }
