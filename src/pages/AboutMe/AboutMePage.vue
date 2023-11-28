@@ -5,20 +5,13 @@
         <div class="about-container">
           <AboutMe />
           <div class="video-container">
-            <video v-if="isWideScreen" controls width="520" height="320">
-              <source
-                src="../../assets/video/Dmytro_Smirnov.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
-            <video v-else controls width="380" height="340">
-              <source
-                src="../../assets/video/Dmytro_Smirnov.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              width="560"
+              height="315"
+              :src="'https://www.youtube.com/embed/YYb3oGi3KGc'"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
         <div class="info-container">
