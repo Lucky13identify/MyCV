@@ -60,19 +60,28 @@ export default {
 
 <style lang="scss" scoped>
 .project {
-  backdrop-filter: blur(10px);
-  width: 350px;
-  height: 280px;
-  border: var(--border-color);
-  background-color: var(--background-color);
   border-radius: 15px;
   padding: 10px;
+  width: 350px;
+  height: 280px;
+
+  border: var(--border-color);
+  background-color: var(--background-color);
+  backdrop-filter: blur(10px);
+
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     box-shadow: var(--shadow);
   }
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
 
 .project-img {
@@ -87,24 +96,23 @@ export default {
   margin-top: 10px;
   gap: 10px;
 }
-
-.img-container {
-  height: 200px;
+.flex-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .project-button {
-  color: white;
+  justify-content: center;
+  align-items: center;
+
   width: 110px;
   height: 30px;
   display: flex;
   padding: 10px;
-  justify-content: center;
-  align-items: center;
+
   border-radius: 6px;
   background: #c2893c;
+  color: white;
   border: none;
   cursor: pointer;
   transition: background 0.3s ease-in-out 0s;
@@ -113,10 +121,5 @@ export default {
   &:focus {
     background: #854f04;
   }
-}
-
-.flex-container {
-  display: flex;
-  justify-content: flex-end;
 }
 </style>

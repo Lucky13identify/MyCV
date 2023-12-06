@@ -62,6 +62,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container-style {
+  background-color: rgba(80, 80, 80, 0.4);
+  backdrop-filter: blur(10px);
+}
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -77,6 +81,7 @@ export default {
 
 .skills-header {
   margin-bottom: 30px;
+
   font-weight: 700;
   font-size: 22px;
   line-height: 1.4;
@@ -85,14 +90,10 @@ export default {
 }
 
 .soft-container {
-  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
-}
 
-.container-style {
-  background-color: rgba(80, 80, 80, 0.4);
-  backdrop-filter: blur(10px);
+  margin-top: 80px;
+  gap: 50px;
 }
 </style>

@@ -53,36 +53,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.info-container {
-  display: flex;
-  flex-direction: column;
-
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
-    gap: 200px;
-  }
+.container-style {
+  background-color: rgba(80, 80, 80, 0.4);
+  backdrop-filter: blur(10px);
 }
+
 .about-me {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
 .animate__animated {
   animation-name: fadeIn;
   animation-duration: 1.5s;
-}
-
-.container-style {
-  background-color: rgba(80, 80, 80, 0.4);
-  backdrop-filter: blur(10px);
 }
 
 .about-container {
   display: flex;
   align-items: center;
   flex-direction: column;
+
   margin-bottom: 80px;
   width: 100%;
 
@@ -92,17 +81,23 @@ export default {
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-
-    justify-content: space-between;
-    width: 100%;
   }
 }
-
 .video-container {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 100%;
   margin-top: 40px;
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 200px;
+  }
 }
 </style>
