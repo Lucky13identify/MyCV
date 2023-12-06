@@ -16,8 +16,9 @@
 </template>
 
 <script>
-import HeaderMenu from ".././HeaderMenu/HeaderMenu";
 import icon from "../../assets/icons/symbol-defs.svg";
+import HeaderMenu from ".././HeaderMenu/HeaderMenu";
+
 export default {
   data() {
     return {

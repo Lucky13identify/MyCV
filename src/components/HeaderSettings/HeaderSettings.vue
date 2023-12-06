@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import icon from "../../assets/icons/symbol-defs.svg";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
+import icon from "../../assets/icons/symbol-defs.svg";
 
 export default {
   data() {

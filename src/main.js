@@ -3,6 +3,8 @@ import App from "./App.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
 import store from "./vuex/store";
 import { createI18n } from "vue-i18n";
+import { ThemeProvider } from "vue3-styled-components";
+// import { lightTheme, darkTheme } from "./styles/styles";
 
 const SkillsPage = () => import("./pages/Skills/SkillsPage.vue");
 const ProjectsPage = () => import("./pages/Projects/ProjectsPage.vue");
@@ -32,4 +34,15 @@ const router = createRouter({
   ],
 });
 
-createApp(App).use(router).use(store).use(i18n).mount("#app");
+const app = createApp(App);
+
+app.use(router).use(store).use(i18n);
+
+app.component("ThemeProvider", ThemeProvider);
+
+// Передайте тему в приложение
+// app.config.globalProperties.lightTheme = lightTheme;
+// app.config.globalProperties.darkTheme = darkTheme;
+
+// Завершите монтирование приложения
+app.mount("#app");

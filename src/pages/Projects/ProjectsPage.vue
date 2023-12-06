@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import ContainerOfProjects from "../../components/Projects/ContainerOfProjects";
 import PulseLoader from "vue-spinner/src/PulseLoader.vue";
+import ContainerOfProjects from "../../components/Projects/ContainerOfProjects";
 
 export default {
   name: "ProjectsPage",

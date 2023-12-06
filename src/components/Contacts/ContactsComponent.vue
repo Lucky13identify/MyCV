@@ -36,8 +36,8 @@
 </template>
 
 <script>
-import icon from "../../assets/icons/symbol-defs.svg";
 import "animate.css";
+import icon from "../../assets/icons/symbol-defs.svg";
 
 export default {
   data() {
