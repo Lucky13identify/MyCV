@@ -24,9 +24,9 @@
 </template>
 
 <script>
-import AboutMe from "../../components/AboutMe/AboutMe.vue";
-import EducationExperience from "../../components/AboutMe/EducationExperience.vue";
-import WorkExperience from "../../components/AboutMe/WorkExperience.vue";
+import AboutMe from "../../components/AboutMe/AboutMeInfo/AboutMeInfo.vue";
+import EducationExperience from "../../components/AboutMe/EducationExperience/EducationExperience.vue";
+import WorkExperience from "../../components/AboutMe/WorkExperience/WorkExperience.vue";
 
 export default {
   name: "AboutMePage",
