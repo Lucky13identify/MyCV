@@ -81,22 +81,18 @@ export default {
   width: 80px;
   height: 80px;
 
-  @media screen and (min-width: 768px) {
-    width: 32px;
-    height: 32px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 32px;
-    height: 32px;
-  }
-}
-.animate__animated {
   fill: white;
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     fill: var(--fill-color);
     animation-name: heartBeat;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 32px;
+    height: 32px;
   }
 }
 </style>

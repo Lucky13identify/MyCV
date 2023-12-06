@@ -83,31 +83,17 @@ export default {
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
+  align-items: baseline;
+
   background: var(--backgroundColor);
   backdrop-filter: blur(10px);
   border-bottom: var(--border);
-  align-items: baseline;
-
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
-}
-.list {
-  display: flex;
-  gap: 20px;
-  margin-right: auto;
-  width: 400px;
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
 }
 
 .open-button {
@@ -115,5 +101,12 @@ export default {
   height: 60px;
   border: none;
   background: transparent;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  margin-right: auto;
+  width: 400px;
 }
 </style>

@@ -61,6 +61,7 @@ export default {
 <style lang="scss" scoped>
 .header {
   margin-bottom: 30px;
+
   font-weight: 700;
   font-size: 22px;
   line-height: 1.4;
@@ -68,33 +69,29 @@ export default {
   text-transform: uppercase;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.flex-element {
+  font-size: 16px;
+
+  &:not(:last-child) {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #7b7b7b;
+  }
+}
+
 .subtitle {
   margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
-}
-
-.header-description {
-  text-align: end;
-  width: 150px;
-}
-
-.text-description {
-  color: var(--color);
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 .description {
@@ -106,23 +103,15 @@ export default {
 
 .container-description {
   display: flex;
-
   gap: 10px;
+}
+.header-description {
+  width: 150px;
+  text-align: end;
 }
 
 .text-description {
   width: 100%;
-}
-.flex-element {
-  font-size: 16px;
-
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
-}
-.flex-element:not(:last-child) {
-  border-bottom: 2px solid #7b7b7b;
-  padding-bottom: 30px;
+  color: var(--color);
 }
 </style>

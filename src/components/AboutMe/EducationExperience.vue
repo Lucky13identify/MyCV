@@ -61,43 +61,31 @@ export default {
   text-transform: uppercase;
 }
 
-.subtitle {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  width: 100%;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    width: 450px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    width: 450px;
-  }
-}
-
 .flex-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-bottom: 60px;
+}
+
+.flex-element:not(:last-child) {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #7b7b7b;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+  width: 100%;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
   @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
+    width: 450px;
+    font-size: 18px;
   }
 }
 
@@ -105,19 +93,5 @@ export default {
   font-size: 16px;
   width: 100%;
   color: var(--color);
-
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
-}
-
-.flex-elemen {
-  width: 100%;
-}
-
-.flex-element:not(:last-child) {
-  border-bottom: 2px solid #7b7b7b;
-  padding-bottom: 30px;
 }
 </style>

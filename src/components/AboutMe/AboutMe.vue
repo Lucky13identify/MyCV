@@ -17,6 +17,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  width: 100%;
+  text-align: justify;
+}
 .header {
   font-weight: 700;
   font-size: 22px;
@@ -29,25 +37,9 @@ export default {
 .text {
   margin: 0;
   text-align: left;
+
   @media screen and (min-width: 768px) {
     text-align: justify;
-  }
-  @media screen and (min-width: 1200px) {
-  }
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  text-align: justify;
-  width: 100%;
-
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 100%;
   }
 }
 </style>
