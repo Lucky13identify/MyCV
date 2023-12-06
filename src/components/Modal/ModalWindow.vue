@@ -154,23 +154,26 @@ export default {
   left: 0;
   width: 100vw;
   height: 100vh;
+
   background: var(--overlay);
   backdrop-filter: blur(4px);
   z-index: 100;
 }
-
 .modal {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 270px;
   height: 90%;
-  border-radius: 15px;
-  background: var(--background-color);
+
   padding: 20px;
+  border-radius: 15px;
+
+  background: var(--background-color);
   color: var(--color);
   overflow-y: auto;
+
+  transform: translate(-50%, -50%);
 
   @media screen and (min-width: 480px) {
     width: 400px;
@@ -186,17 +189,19 @@ export default {
     height: 90%;
   }
 }
-
-.adding-container {
-  margin-top: 20px;
+.button-container {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.close {
+  display: flex;
+  padding: 3px;
+  border-radius: 50%;
 
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 .icon {
@@ -208,41 +213,48 @@ export default {
     fill: #c2893c;
   }
 }
-
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .image {
   border-radius: 20px;
 }
-
-.close {
-  display: flex;
-  border-radius: 50%;
-  padding: 3px;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-
 .name-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
   margin-top: 20px;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
-  }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
 }
-
-.button-container {
+.adding-container {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
 }
+.tech-skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  padding: 8px;
+  border-radius: 20px;
+
+  background-color: rgba(194, 137, 60, 0.5);
+  color: var(--color-tech);
+}
+.project-notes {
+  margin-bottom: 20px;
+}
 .fat-header {
   font-weight: bold;
 }
@@ -251,48 +263,40 @@ export default {
   margin-bottom: 30px;
   text-align: justify;
 }
-
 .tech-container {
-  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  padding-top: 20px;
   margin-bottom: 60px;
+  gap: 10px;
+}
 
-  @media screen and (min-width: 768px) {
-  }
+.link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 20px;
+  margin-bottom: 20px;
+
   @media screen and (min-width: 1200px) {
+    justify-content: flex-end;
   }
-}
-
-.tech-skill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(194, 137, 60, 0.5);
-  color: var(--color-tech);
-  padding: 8px;
-  border-radius: 20px;
-}
-
-.img-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .link-button {
-  text-align: center;
-  color: white;
-  width: 90px;
-  height: 26px;
   display: flex;
-  padding: 10px;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 10px;
+
+  width: 90px;
+  height: 26px;
   border-radius: 6px;
+
   background: #c2893c;
+  color: white;
   border: none;
   cursor: pointer;
   transition: background 0.3s ease-in-out 0s;
@@ -300,24 +304,6 @@ export default {
   &:hover,
   &:focus {
     background: #854f04;
-  }
-}
-
-.project-notes {
-  margin-bottom: 20px;
-}
-.link-container {
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-    justify-content: flex-end;
   }
 }
 </style>

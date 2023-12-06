@@ -88,42 +88,24 @@ export default {
     width: 160px;
     gap: 20px;
   }
-  @media screen and (min-width: 1200px) {
-  }
-}
-
-.flag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
-  background-color: transparent;
-}
-
-.flag-container {
-  display: flex;
-  gap: 20px;
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-    gap: 10px;
-  }
 }
 
 .light {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  border: none;
+
   width: 40px;
   height: 40px;
+
+  border-radius: 50%;
+
+  border: none;
+
   cursor: pointer;
   background-color: transparent;
   fill: var(--color);
+
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -131,6 +113,28 @@ export default {
   &:focus {
     background-color: var(--bg-color);
     fill: var(--fill-color);
+  }
+}
+
+.flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.flag-container {
+  display: flex;
+  gap: 20px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 10px;
   }
 }
 </style>

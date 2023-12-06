@@ -55,6 +55,7 @@ export default {
   left: 0;
   width: 100vw;
   height: 100vh;
+
   background: var(--overlay);
   backdrop-filter: blur(4px);
   z-index: 100;
@@ -62,15 +63,15 @@ export default {
 
 .modal {
   position: relative;
+  padding: 20px;
   top: 52%;
   left: 72%;
-  transform: translate(-50%, -50%);
   width: 50%;
   height: 100%;
   border-radius: 15px;
-  background: var(--background-color);
-  padding: 20px;
+  transform: translate(-50%, -50%);
 
+  background: var(--background-color);
   overflow-y: auto;
 }
 
@@ -82,8 +83,9 @@ export default {
 
 .close {
   display: flex;
-  border-radius: 50%;
   padding: 3px;
+  border-radius: 50%;
+
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -97,8 +99,6 @@ export default {
   &:focus {
     fill: white;
 
-    @media screen and (min-width: 768px) {
-    }
     @media screen and (min-width: 1200px) {
       fill: #2a9c68;
     }

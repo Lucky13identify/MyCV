@@ -40,19 +40,17 @@ export default {
   line-height: 1.4;
 
   @media screen and (min-width: 768px) {
+    margin-top: 0;
     font-size: 16px;
     line-height: 1.2;
-    margin-top: 0;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-top: 0;
   }
 }
 .link {
   position: relative;
+  padding-bottom: 20px;
   width: 100%;
   cursor: pointer;
-  padding-bottom: 20px;
+
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
