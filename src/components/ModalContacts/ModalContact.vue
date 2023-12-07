@@ -15,7 +15,7 @@
 
 <script>
 import icon from "../../assets/icons/symbol-defs.svg";
-import ContactsComponent from "../Contacts/ContactsComponent";
+import ContactsComponent from "../Contacts/ContactsComponent/ContactsComponent.vue";
 
 export default {
   data() {
