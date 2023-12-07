@@ -1,7 +1,7 @@
 <template>
   <header class="header" :style="themeStyles">
-    <div class="container" v-if="isWideScreen">
-      <button class="open-button" @click="openModalMenu">
+    <Container class="container" v-if="isWideScreen">
+      <OpenButton @click="openModalMenu">
         <svg
           class="animate__animated"
           height="40"
@@ -10,9 +10,9 @@
         >
           <use :href="icon + '#menu'"></use>
         </svg>
-      </button>
+      </OpenButton>
       <HeaderSettings />
-      <button class="open-button" @click="openModalContacts">
+      <OpenButton @click="openModalContacts">
         <svg
           class="animate__animated"
           height="40"
@@ -21,12 +21,12 @@
         >
           <use :href="icon + '#address-book'"></use>
         </svg>
-      </button>
-    </div>
+      </OpenButton>
+    </Container>
     <div class="container" v-else>
-      <ul class="list">
+      <List>
         <HeaderMenu />
-      </ul>
+      </List>
       <HeaderSettings />
       <ContactsComponent />
     </div>
@@ -38,6 +38,7 @@ import ContactsComponent from ".././Contacts/ContactsComponent/ContactsComponent
 import HeaderSettings from ".././HeaderSettings/HeaderSettings";
 import HeaderMenu from ".././HeaderMenu/HeaderMenu";
 import icon from "../../assets/icons/symbol-defs.svg";
+import { Container, OpenButton, List } from "./HeaderComponent.styled";
 
 export default {
   name: "HeaderComponent",
@@ -45,6 +46,9 @@ export default {
     ContactsComponent,
     HeaderSettings,
     HeaderMenu,
+    Container,
+    OpenButton,
+    List,
   },
   data() {
     return { icon, isWideScreen: window.innerWidth < 768 };
@@ -94,19 +98,5 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.open-button {
-  width: 60px;
-  height: 60px;
-  border: none;
-  background: transparent;
-}
-
-.list {
-  display: flex;
-  gap: 20px;
-  margin-right: auto;
-  width: 400px;
 }
 </style>

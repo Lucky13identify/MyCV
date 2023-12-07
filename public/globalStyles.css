@@ -15,19 +15,6 @@ body {
     url(https://res.cloudinary.com/dici0468p/image/upload/v1698775443/noutbuk_didzhej_oborudovanie_212416_1920x1200_dme1gb.jpg);
 }
 
-/* .light {
-  background-color: white;
-}
-
-.dark {
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.6),
-      rgba(47, 48, 58, 0.6)
-    ),
-    url(https://res.cloudinary.com/dici0468p/image/upload/v1698775443/noutbuk_didzhej_oborudovanie_212416_1920x1200_dme1gb.jpg);
-} */
-
 li {
   list-style: none;
 }
