@@ -1,28 +1,31 @@
 <template>
-  <li class="list-item">
+  <ListItem>
     <RouterLink :style="themeStyles" class="link" to="/">{{
       $t("home_navigation")
     }}</RouterLink>
-  </li>
-  <li class="list-item">
+  </ListItem>
+  <ListItem>
     <RouterLink :style="themeStyles" class="link" to="/about">{{
       $t("about_navigation")
     }}</RouterLink>
-  </li>
-  <li class="list-item">
+  </ListItem>
+  <ListItem>
     <RouterLink :style="themeStyles" class="link" to="/skills">{{
       $t("skills_navigation")
     }}</RouterLink>
-  </li>
-  <li class="list-item">
+  </ListItem>
+  <ListItem>
     <RouterLink :style="themeStyles" class="link" to="/projects">{{
       $t("projects_navigation")
     }}</RouterLink>
-  </li>
+  </ListItem>
 </template>
 
 <script>
+import { ListItem } from "./HeaderMenu.styled";
+
 export default {
+  components: { ListItem },
   computed: {
     themeStyles() {
       return {
@@ -34,7 +37,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.list-item {
+/* .list-item {
   margin-top: 8px;
   font-size: 30px;
   line-height: 1.4;
@@ -44,7 +47,7 @@ export default {
     font-size: 16px;
     line-height: 1.2;
   }
-}
+} */
 .link {
   position: relative;
   padding-bottom: 20px;
