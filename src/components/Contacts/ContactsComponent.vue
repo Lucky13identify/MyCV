@@ -37,7 +37,7 @@
 
 <script>
 import "animate.css";
-import icon from "../../../assets/icons/symbol-defs.svg";
+import icon from "../../assets/icons/symbol-defs.svg";
 import { FlexContainer, Animate } from "./ContactsComponent.styled";
 
 export default {

@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import ContactsComponent from ".././Contacts/ContactsComponent/ContactsComponent.vue";
+import ContactsComponent from ".././Contacts/ContactsComponent.vue";
 import HeaderSettings from ".././HeaderSettings/HeaderSettings";
 import HeaderMenu from ".././HeaderMenu/HeaderMenu";
 import icon from "../../assets/icons/symbol-defs.svg";
