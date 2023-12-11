@@ -34,6 +34,7 @@
 <script>
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import icon from "../../assets/icons/symbol-defs.svg";
+import {} from "./HeaderSettings.styled.js";
 
 export default {
   data() {
