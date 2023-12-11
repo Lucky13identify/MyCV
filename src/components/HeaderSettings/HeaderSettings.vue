@@ -10,34 +10,24 @@
         <use :href="icon + '#brightness-contrast'"></use>
       </svg>
     </button>
-    <div class="flag-container">
-      <button
-        type="button"
-        class="flag"
-        :style="themeStyles"
-        @click="changeLanguage('en')"
-      >
+    <FlagContainer>
+      <Flag type="button" :style="themeStyles" @click="changeLanguage('en')">
         <span class="fi fi-gb"></span>
-      </button>
-      <button
-        type="button"
-        class="flag"
-        :style="themeStyles"
-        @click="changeLanguage('ua')"
-      >
+      </Flag>
+      <Flag type="button" :style="themeStyles" @click="changeLanguage('ua')">
         <span class="fi fi-ua"></span>
-      </button>
-    </div>
+      </Flag>
+    </FlagContainer>
   </Container>
 </template>
 
 <script>
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import icon from "../../assets/icons/symbol-defs.svg";
-import { Container } from "./HeaderSettings.styled.js";
+import { Container, Flag, FlagContainer } from "./HeaderSettings.styled.js";
 
 export default {
-  components: { Container },
+  components: { Container, Flag, FlagContainer },
   data() {
     return {
       icon,
@@ -103,28 +93,6 @@ export default {
   &:focus {
     background-color: var(--bg-color);
     fill: var(--fill-color);
-  }
-}
-
-.flag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 5px;
-  border-radius: 5px;
-
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-
-.flag-container {
-  display: flex;
-  gap: 20px;
-
-  @media screen and (min-width: 1200px) {
-    gap: 10px;
   }
 }
 </style>
