@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <Container class="container">
     <button
       type="button"
       class="light"
@@ -28,15 +28,16 @@
         <span class="fi fi-ua"></span>
       </button>
     </div>
-  </div>
+  </Container>
 </template>
 
 <script>
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import icon from "../../assets/icons/symbol-defs.svg";
-import {} from "./HeaderSettings.styled.js";
+import { Container } from "./HeaderSettings.styled.js";
 
 export default {
+  components: { Container },
   data() {
     return {
       icon,
@@ -79,18 +80,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  width: 200px;
-  padding: 0;
-  gap: 30px;
-  justify-content: flex-end;
-
-  @media screen and (min-width: 768px) {
-    width: 160px;
-    gap: 20px;
-  }
-}
-
 .light {
   display: flex;
   justify-content: center;
