@@ -32,3 +32,15 @@ export const NameContainer = styled.div``;
 export const AddingContainer = styled.div``;
 
 export const TechSkill = styled.p``;
+
+export const ProjectNotes = styled.p``;
+
+export const FatHeader = styled.span``;
+
+export const ProjectDescription = styled.p``;
+
+export const TechContainer = styled.ul``;
+
+export const LinkContainer = styled.div``;
+
+export const LinkButton = styled.a``;
