@@ -98,7 +98,6 @@ export default {
     ButtonContainer,
     Close,
     ImgContainer,
-
     NameContainer,
     AddingContainer,
     ProjectNotes,
@@ -227,25 +226,7 @@ export default {
 .image {
   border-radius: 20px;
 }
-.name-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
-  }
-}
-.adding-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 20px;
-}
 .tech-skill {
   display: flex;
   justify-content: center;
@@ -256,59 +237,5 @@ export default {
 
   background-color: rgba(194, 137, 60, 0.5);
   color: var(--color-tech);
-}
-.project-notes {
-  margin-bottom: 20px;
-}
-.fat-header {
-  font-weight: bold;
-}
-.project-description {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  text-align: justify;
-}
-.tech-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 20px;
-  margin-bottom: 60px;
-  gap: 10px;
-}
-
-.link-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  gap: 20px;
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 1200px) {
-    justify-content: flex-end;
-  }
-}
-
-.link-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-
-  width: 90px;
-  height: 26px;
-  border-radius: 6px;
-
-  background: #c2893c;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out 0s;
-
-  &:hover,
-  &:focus {
-    background: #854f04;
-  }
 }
 </style>
