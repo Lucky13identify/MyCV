@@ -6,39 +6,39 @@
     v-if="$store.state.oneProject.name"
   >
     <div v-if="$store.state.isModalOpen" class="modal">
-      <div class="button-container">
-        <button class="close" type="button" @click="closeModalButton">
+      <ButtonContainer>
+        <Close type="button" @click="closeModalButton">
           <svg class="icon" height="20 " width="20">
             <use :href="icon + '#cross'"></use>
           </svg>
-        </button>
-      </div>
-      <div class="img-container">
+        </Close>
+      </ButtonContainer>
+      <ImgContainer>
         <img class="image" :src="$store.state.oneProject.img" />
-      </div>
-      <div class="name-container">
+      </ImgContainer>
+      <NameContainer>
         <h2 v-if="$store.state.oneProject.name">
           {{ getProjectName($store.state.oneProject) }}
         </h2>
-        <div class="adding-container">
+        <AddingContainer>
           <p v-if="$store.state.oneProject.type" class="tech-skill">
             {{ getProjectType($store.state.oneProject) }}
           </p>
           <p v-if="$store.state.oneProject.design_type" class="tech-skill">
             {{ getProjectDesign($store.state.oneProject) }}
           </p>
-        </div>
-      </div>
-      <p v-if="$store.state.oneProject.notes" class="project-notes">
-        <span class="fat-header">{{ $t("notes_modal") }} </span
+        </AddingContainer>
+      </NameContainer>
+      <ProjectNotes v-if="$store.state.oneProject.notes">
+        <FatHeader>{{ $t("notes_modal") }} </FatHeader
         >{{ getProjectNote($store.state.oneProject) }}
-      </p>
+      </ProjectNotes>
       <h3>{{ $t("description_modal") }}</h3>
-      <p v-if="$store.state.oneProject.description" class="project-description">
+      <ProjectDescription v-if="$store.state.oneProject.description">
         {{ getProjectDescription($store.state.oneProject) }}
-      </p>
+      </ProjectDescription>
       <h3>{{ $t("stack_modal") }}</h3>
-      <ul class="tech-container">
+      <TechContainer>
         <li
           class="tech-skill"
           v-for="tech in this.$store.state.oneProject.tech_stack"
@@ -46,37 +46,46 @@
         >
           {{ tech }}
         </li>
-      </ul>
-      <div class="link-container">
-        <a
+      </TechContainer>
+      <LinkContainer>
+        <LinkButton
           v-if="$store.state.oneProject.repo_link"
           target="_blank"
-          class="link-button"
           :href="$store.state.oneProject.repo_link"
-          >{{ $t("button_front_modal") }}</a
+          >{{ $t("button_front_modal") }}</LinkButton
         >
-        <a
+        <LinkButton
           v-if="$store.state.oneProject.backend_link"
           target="_blank"
-          class="link-button"
           :href="$store.state.oneProject.backend_link"
-          >{{ $t("button_back_modal") }}</a
+          >{{ $t("button_back_modal") }}</LinkButton
         >
-        <a
+        <LinkButton
           v-if="$store.state.oneProject.page_link"
           target="_blank"
-          class="link-button"
           :href="$store.state.oneProject.page_link"
-          >{{ $t("button_live_modal") }}</a
+          >{{ $t("button_live_modal") }}</LinkButton
         >
-      </div>
+      </LinkContainer>
     </div>
   </div>
 </template>
 
 <script>
 import icon from "../../assets/icons/symbol-defs.svg";
-import {} from "./ModalWindow.styled";
+import {
+  ButtonContainer,
+  Close,
+  ImgContainer,
+  NameContainer,
+  AddingContainer,
+  ProjectNotes,
+  FatHeader,
+  ProjectDescription,
+  TechContainer,
+  LinkContainer,
+  LinkButton,
+} from "./ModalWindow.styled";
 
 export default {
   data() {
@@ -84,6 +93,20 @@ export default {
       icon,
       show: true,
     };
+  },
+  components: {
+    ButtonContainer,
+    Close,
+    ImgContainer,
+
+    NameContainer,
+    AddingContainer,
+    ProjectNotes,
+    FatHeader,
+    ProjectDescription,
+    TechContainer,
+    LinkContainer,
+    LinkButton,
   },
   methods: {
     getProjectDesign(project) {
@@ -190,20 +213,6 @@ export default {
     height: 90%;
   }
 }
-.button-container {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 10px;
-}
-.close {
-  display: flex;
-  padding: 3px;
-  border-radius: 50%;
-
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
 
 .icon {
   fill: var(--icon);
@@ -214,12 +223,7 @@ export default {
     fill: #c2893c;
   }
 }
-.img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
+
 .image {
   border-radius: 20px;
 }
