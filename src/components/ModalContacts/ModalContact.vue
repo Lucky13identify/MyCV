@@ -1,13 +1,13 @@
 <template>
   <div class="overlay" :style="themeStyles" @click="closeModalOverlay">
     <div class="modal">
-      <div class="button-container">
-        <button class="close" type="button" @click="closeModalButton">
+      <ButtonContainer>
+        <Close type="button" @click="closeModalButton">
           <svg class="icon" height="20 " width="20">
             <use :href="icon + '#cross'"></use>
           </svg>
-        </button>
-      </div>
+        </Close>
+      </ButtonContainer>
       <ContactsComponent />
     </div>
   </div>
@@ -16,7 +16,7 @@
 <script>
 import icon from "../../assets/icons/symbol-defs.svg";
 import ContactsComponent from "../Contacts/ContactsComponent.vue";
-import {} from "./ModalContact.styled";
+import { ButtonContainer, Close } from "./ModalContact.styled";
 
 export default {
   data() {
@@ -24,7 +24,7 @@ export default {
       icon,
     };
   },
-  components: { ContactsComponent },
+  components: { ContactsComponent, ButtonContainer, Close },
   methods: {
     closeModalOverlay(e) {
       if (e.target.className === "overlay animate__animated") {
