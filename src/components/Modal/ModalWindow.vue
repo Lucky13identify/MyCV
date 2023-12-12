@@ -76,6 +76,7 @@
 
 <script>
 import icon from "../../assets/icons/symbol-defs.svg";
+import {} from "./ModalWindow.styled";
 
 export default {
   data() {
