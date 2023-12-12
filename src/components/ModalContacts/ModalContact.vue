@@ -16,6 +16,7 @@
 <script>
 import icon from "../../assets/icons/symbol-defs.svg";
 import ContactsComponent from "../Contacts/ContactsComponent.vue";
+import {} from "./ModalContact.styled";
 
 export default {
   data() {
