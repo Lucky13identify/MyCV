@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import ListOfProjects from "./ListOfProjects";
+import ListOfProjects from "../ListOfProjects/ListOfProjects.vue";
 
 export default {
   name: "ContainerOfProjects",

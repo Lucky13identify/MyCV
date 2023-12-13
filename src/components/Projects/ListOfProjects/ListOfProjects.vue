@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import ModalWindow from "../Modal/ModalWindow.vue";
-import { getProjectName } from "../../utils/translater";
+import ModalWindow from "../../Modal/ModalWindow.vue";
+import { getProjectName } from "../../../utils/translater";
 
 export default {
   data() {

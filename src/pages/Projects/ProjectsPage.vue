@@ -9,7 +9,7 @@
 
 <script>
 import PulseLoader from "vue-spinner/src/PulseLoader.vue";
-import ContainerOfProjects from "../../components/Projects/ContainerOfProjects";
+import ContainerOfProjects from "../../components/Projects/ContainerOfProjects/ContainerOfProjects.vue";
 
 export default {
   name: "ProjectsPage",
