@@ -76,22 +76,6 @@ export default {
   overflow-y: auto;
 }
 
-.button-container {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 18px;
-}
-
-.close {
-  display: flex;
-  padding: 3px;
-  border-radius: 50%;
-
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-
 .icon {
   fill: var(--icon);
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);

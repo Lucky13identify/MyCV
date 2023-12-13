@@ -18,6 +18,7 @@
 <script>
 import icon from "../../assets/icons/symbol-defs.svg";
 import HeaderMenu from ".././HeaderMenu/HeaderMenu";
+import {} from "./ModalMenu.styled";
 
 export default {
   data() {
