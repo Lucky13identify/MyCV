@@ -1,16 +1,16 @@
 <template>
   <div class="overlay" :style="themeStyles" @click="closeModalOverlay">
     <div class="modal">
-      <div class="button-container">
-        <button class="close" type="button" @click="closeModalButton">
+      <ButtonContainer>
+        <Close type="button" @click="closeModalButton">
           <svg class="icon" height="20 " width="20">
             <use :href="icon + '#cross'"></use>
           </svg>
-        </button>
-      </div>
-      <ul class="list">
+        </Close>
+      </ButtonContainer>
+      <List>
         <HeaderMenu />
-      </ul>
+      </List>
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@
 <script>
 import icon from "../../assets/icons/symbol-defs.svg";
 import HeaderMenu from ".././HeaderMenu/HeaderMenu";
-import {} from "./ModalMenu.styled";
+import { ButtonContainer, Close, List } from "./ModalMenu.styled";
 
 export default {
   data() {
@@ -26,7 +26,7 @@ export default {
       icon,
     };
   },
-  components: { HeaderMenu },
+  components: { HeaderMenu, ButtonContainer, Close, List },
   methods: {
     closeModalOverlay(e) {
       if (e.target.className === "overlay animate__animated") {
@@ -80,22 +80,6 @@ export default {
   overflow-y: auto;
 }
 
-.button-container {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 10px;
-}
-
-.close {
-  display: flex;
-  padding: 3px;
-  border-radius: 50%;
-
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-
 .icon {
   fill: var(--icon);
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -108,13 +92,5 @@ export default {
       fill: #2a9c68;
     }
   }
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-right: auto;
-  width: 200px;
 }
 </style>
